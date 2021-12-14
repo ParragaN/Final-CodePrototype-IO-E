@@ -37,7 +37,7 @@ var sketch = function(p) {
   var noiseScale = 300; //controls the pattern (lower means more particles/ high means more length in lines)
   var noiseStrength = 10; //controls the patterns made by the lines
   var overlayAlpha = 10; //controls transparency of the lines 
-  var agentAlpha = 90; //can be the posenet x position of a nose 
+  var agentAlpha = 90; // transparency
   var strokeWidth = 1.8; //width of lines
   var drawMode = 1; // two modes 
 
@@ -92,7 +92,7 @@ var sketch = function(p) {
   //serial.onRawData(gotRawData);
   ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
   
-  /////POSENET copied from sketch3 in week 7 posenet code examples
+  /////POSENET copied from sketch3 in week 7 posenet code examples NOT WORKING
   // p.video = createCapture(VIDEO);
   // p.video.hide();
   // poseNet = ml5.poseNet(p.video, modelLoaded);
@@ -106,7 +106,7 @@ function modelLoaded(){
 };
 
 
-//if someone is in frame change the pattern of visuals
+//if someone is in frame change the pattern of visuals NOT WORKING
 // function gotPoses(poses){
 //   // console.log(poses);
 //   if( poses.length >0 ){
